@@ -1,0 +1,2 @@
+# KakaoTalkTrashFileDeleter
+KakaoTalkTrashFileDeleter for me.
