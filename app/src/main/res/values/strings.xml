@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">카톡 임시폴더 삭제기</string>
+    <string name="action_settings">설정</string>
+    <string name="action_tips">사용 팁</string>
+</resources>

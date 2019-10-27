@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/normal_margin"
+    android:focusableInTouchMode="true"
+    tools:ignore="HardcodedText,Autofill,TextFields" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="환경설정"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/half_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[개발자 전용 설정]\n잘 모르시면 건들지 않는거 추천"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FA5858"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="임시폴더로 추가할 폴더의 전체 경로를 입력해 주세요"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:id="@+id/path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="엔터로 구분" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/opensource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오픈소스 라이선스"/>
+
+</LinearLayout>

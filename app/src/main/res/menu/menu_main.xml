@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="om.sungbin.kakaotalk.trashfile.deleter.MainActivity"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/ic_thumb_up_white_24dp"
+        android:id="@+id/action_tips"
+        android:orderInCategory="100"
+        android:title="@string/action_tips"
+        app:showAsAction="always" />
+
+</menu>

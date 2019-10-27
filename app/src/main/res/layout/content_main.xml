@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="State Face"
+        android:scaleType="fitXY"
+        android:layout_above="@id/state"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_good_face_green_24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상태 : 좋음"
+        android:textStyle="bold"
+        android:textColor="#31B404"
+        android:layout_above="@id/clear"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:id="@+id/state"/>
+
+    <Button
+        android:textStyle="bold"
+        android:padding="@dimen/normal_margin"
+        android:textColor="@android:color/white"
+        android:background="@drawable/corner_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="임시폴더 삭제"
+        android:id="@+id/clear"/>
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/clear"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="임시폴더 용량 : 권한 필요"/>
+
+    <RelativeLayout
+        android:id="@+id/adview"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </RelativeLayout>
+
+</RelativeLayout>

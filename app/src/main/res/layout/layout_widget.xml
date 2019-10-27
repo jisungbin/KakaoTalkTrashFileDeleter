@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/half_margin"
+    android:background="@drawable/widget_drawable"
+    android:focusableInTouchMode="true"
+    tools:ignore="HardcodedText" >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:id="@+id/face"
+        android:contentDescription="상태 아이콘"
+        android:src="@drawable/ic_good_face_green_24dp"/>
+
+    <LinearLayout
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/half_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/state"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="임시폴더 용량 : $size"
+            android:textStyle="bold"
+            android:textColor="#31B404"/>
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[임시폴더 삭제]"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
